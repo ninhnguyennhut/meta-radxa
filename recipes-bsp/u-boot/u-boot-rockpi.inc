@@ -9,7 +9,7 @@ DEPENDS = "dtc-native bc-native swig-native bison-native coreutils-native"
 S = "${WORKDIR}/git"
 
 # u-boot will build native python module
-inherit pythonnative
+inherit python3native
 
 do_configure () {
     if [ -z "${UBOOT_CONFIG}" ]; then
